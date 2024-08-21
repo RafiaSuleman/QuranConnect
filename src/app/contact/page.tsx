@@ -38,7 +38,7 @@ export default function Contact() {
       {/* Decorative background elements */}
       <div className="absolute top-[-30px] left-0 w-full h-48 bg-gradient-to-r from-emerald-600 to-teal-500 transform -skew-y-6"></div>
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-amber-300 rounded-full opacity-50 transform translate-x-1/2 translate-y-1/2"></div>
-      <div className="absolute top-1/6 left-1/4 w-32 h-32 bg-emerald-300 rounded-full opacity-50 transform -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute top-[15%] left-1/4 w-32 h-32 bg-emerald-300 rounded-full opacity-50 transform -translate-x-1/2 -translate-y-1/2"></div>
 
       <div className="container mx-auto px-4 mt-6 relative z-10">
         <h1 className="text-5xl font-bold text-center text-white mb-16 shadow-text">Contact Us</h1>
