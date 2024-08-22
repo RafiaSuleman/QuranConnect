@@ -67,9 +67,9 @@ const PlanCard = ({ plan, currency, isSpecial }: any) => {
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
-      className="relative overflow-hidden rounded-3xl p-8 h-full w-full bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 shadow-xl "
+      className="relative overflow-hidden rounded-3xl p-8 h-full w-full bg-[#047B5F] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-70 border border-gray-100 shadow-xl "
     >
-      <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-white opacity-10"></div>
+      <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-[#047B5F] opacity-30"></div>
       <Icon className="mb-4 h-12 w-12 text-green-100 " />
       <h3 className="mb-4 text-2xl font-bold">{plan.name}</h3>
       <p className="mb-4 text-sm opacity-80">{plan.duration} Class</p>
@@ -90,13 +90,13 @@ export default function PricingPage() {
   const [currency, setCurrency] = useState('USD');
 
   return (
-    <div className="min-h-screen bg-gradient-to-br  from-green-600 via-emerald-600 to-teal-500 py-20 text-white">
+    <div className="min-h-screen bg-gradient-to-br from-[#069A70] via-[#0DA98B] to-[#14B7A5] py-20 text-[#FFFDE7]">
       <div className="container mx-auto px-4">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-8 text-center text-5xl font-bold"
+          className="mb-8 text-center text-[#F0E68C] text-5xl font-bold"
         >
           Grow Your Quranic Knowledge
         </motion.h1>
@@ -124,7 +124,7 @@ export default function PricingPage() {
         </div>
 
         <div className="mb-20">
-          <h2 className="mb-8 text-center text-3xl font-semibold">Regular Plans</h2>
+          <h2 className="mb-8 text-center text-3xl text-[#F0E68C] font-semibold">Regular Plans</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
             {pricingPlans.map((plan, index) => (
               <PlanCard key={index} plan={plan} currency={currency} isSpecial={false} />
@@ -133,7 +133,7 @@ export default function PricingPage() {
         </div>
 
         <div className="mb-20">
-          <h2 className="mb-8 text-center text-3xl font-semibold">Special Plans</h2>
+          <h2 className="mb-8 text-center text-3xl text-[#F0E68C] font-semibold">Special Plans</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {specialPlans.map((plan, index) => (
               <PlanCard key={index} plan={plan} currency={currency} isSpecial={true} />
@@ -145,9 +145,9 @@ export default function PricingPage() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="rounded-3xl bg-white bg-opacity-10 p-8 backdrop-blur-lg"
+          className="rounded-3xl bg-[#047B5F] bg-opacity-70 p-8 backdrop-blur-lg"
         >
-          <h2 className="mb-6 text-center text-3xl font-semibold">Frequently Asked Questions</h2>
+          <h2 className="mb-6 text-center text-3xl text-[#FFDAB9] font-semibold">Frequently Asked Questions</h2>
           <div className="space-y-6">
             <div>
               <h3 className="mb-2 text-xl font-semibold">Can I switch plans?</h3>
